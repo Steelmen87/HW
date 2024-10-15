@@ -42,7 +42,7 @@ export const HW4 = () => {
                 {texts.map((el, index) => {
                     //ЕСЛИ ЧЕТН ? S.chetNechet :
                     return (
-                        <li key={index} id={`hw04-task-${index}`} className={index % 2 !== 0 ? s.chetNechet : ''}>
+                        <li key={index} id={`hw04-task-${index}`} className={index % 2 === 0 ? s.chetNechet : ''}>
                             {el}
                         </li>
                     );
